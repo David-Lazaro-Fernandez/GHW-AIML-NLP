@@ -43,7 +43,6 @@ print(df)
 analyzer = SentimentIntensityAnalyzer()
 
 # create get_sentiment function
-
 def get_sentiment(text):
     scores = analyzer.polarity_scores(text)
     sentiment = 1 if scores['pos'] > 0 else 0
